@@ -19,8 +19,7 @@ import java.util.Date;
 public class Termin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private
-    Long id;
+    private Long id;
     private Date vreme;
     @ManyToOne
     @JoinColumn(name = "statusId")
