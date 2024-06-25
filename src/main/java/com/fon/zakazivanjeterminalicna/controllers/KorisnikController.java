@@ -16,7 +16,7 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("/api/korisnik")
-public class    KorisnikController {
+public class KorisnikController {
     @Autowired
     KorisnikService korisnikService;
 

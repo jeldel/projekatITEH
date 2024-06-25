@@ -23,6 +23,7 @@ public class MUPController {
     public ResponseEntity<?> getById(@PathVariable("id") Long id){
         System.out.println(id);
         MUP mup = mupService.getById(id);
+        System.out.println(mup);
         if (mup!=null) return ResponseEntity.ok(mup);
         return ResponseEntity.badRequest().body("Mup sa ovim idem ne postoji");
     }
